@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background: url('../Imagens/img\ branca\ lisa.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(120px);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+   position: relative;
+   width: 100%;
+   height: 50px; 
+   margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px; 
+}
+
+.input-box input::placeholder {
+    color: #c5c5c5;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;  
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #ffffff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #000000;
+
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-botao {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+}
+.login-botao:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.login-header {
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.artistas {
+    text-decoration: none;
+    color: #000000;
+}
+
+.artistas:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    display: inline-block;
+    background-color: #000;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 16px;         
+    border: none;
+    font-size: 14px;             
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
+    margin: 4px 4px 0 0;         
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s ease;
+}
+
+.menu:hover {
+    background-color: #fffefa;
+    color: #000 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: scale(1.1);
+}
+.tabela {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tabela th {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.tabela td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  background-color: #f9f9f9;
+}
+
+.menu-superior {
+    margin-top: -10px;
+}
+
+.menu-ancoras {
+    margin-top: -90px;
+}
+
+.musica{
+    color: #000000;
+    text-decoration: none;
+}
+
+.musica:hover {
+    text-decoration: underline;
+}
+.mapa-localizacao {
+    margin-top: 30px;
+}
+
+.mapa-localizacao iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.leia {
+    color: #000000;
+    text-decoration: none;
+}
+.leia:hover {
+    text-decoration: underline;
+}
+.menu:last-of-type {
+    margin-bottom: 10px;
+    margin-top: 10;
+    display: inline-block;
+    position: relative;
+}
+.login-icone {
+  position: absolute;
+  top: 85px;
+  right: 10px;
+  z-index: 1000;
+}
+.login-icone:hover{
+    transform: scale(1.1);
+}
+.faixa-topo {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 6px 0 8px 0;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.rodape {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rodape a {
+  color: #b2b3b4;
+  text-decoration: none;
+  width: 100%;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+  width: 100%;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100%;
+    margin-top: 40px;
+}
+.sem-bolinha {
+    list-style-type: none;
+    padding-left: 0; 
+}
+.barra-pesquisa {
+  top: 20px;        
+  margin: 10px;    
+  margin-top: 90px; 
+  display: flex;
+}
+
+#campo-pesquisa {
+  width: 135px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  outline: none;
+}
+mark {
+  background-color: yellow;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.highlight {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.highlight-current {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.logo-topo img {
+  position: relative;
+  top: -75px;      /* valor negativo para subir só a imagem */
+  margin-bottom: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.linha-superior {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;    
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 768px) {
+  .faixa-topo {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .login-icone svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .barra-pesquisa input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .login-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-superior,
+  .menu-ancoras {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  video, img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    
